@@ -1,0 +1,19 @@
+.Modal_backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(235, 202, 202, 0.335);
+}
+
+.Modal_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 500px;
+  background-color: rgb(192, 47, 47);
+  border-radius: 3%;
+}
