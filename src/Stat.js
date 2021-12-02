@@ -13,7 +13,7 @@ const Stat = ({ totalTodo, complitedTodo }) => {
 
 const mapStateToProps = (state) => ({
   totalTodo: todosSelectors.getTotalTodo(state),
-  complitedTodo: todosSelectors.getComplitedTodostate(state)
+  complitedTodo: todosSelectors.getComplitedTodo(state),
 });
 
 export default connect(mapStateToProps)(Stat);
