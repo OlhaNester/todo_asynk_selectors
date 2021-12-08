@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import todosSelectors from '../src/redux/todos/todos-selectors';
+import todosSelectors from "../src/redux/todos/todos-selectors";
 
 const Stat = ({ totalTodo, complitedTodo }) => {
   return (

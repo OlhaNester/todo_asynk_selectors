@@ -1,11 +1,6 @@
 {
   "todos": [
     {
-      "id": "id-1",
-      "text": "Выучить основы React",
-      "completed": false
-    },
-    {
       "id": "id-2",
       "text": "Разобраться с React Router",
       "completed": true
@@ -19,11 +14,6 @@
       "id": "id-4",
       "text": "Попробовать React Hooks",
       "completed": true
-    },
-    {
-      "text": "fgargwerg",
-      "completed": false,
-      "id": "G8vbBOq"
     }
   ]
 }
