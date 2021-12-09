@@ -4,8 +4,12 @@ import "./TodoList.css";
 import classNames from "classnames";
 import { connect } from "react-redux";
 //import * as todosActions from "../redux/todos/todos_actions";
-import todosOperation from "../redux/todos/todos-operation.js";
-import todosSelectors from '../redux/todos/todos-selectors';
+
+
+//import todosOperations from '../redux/todos/todos-operation';
+//import todosSelectors from '../redux/todos/todos-selectors';
+
+import {todosOperations, todosSelectors} from '../redux/todos';
 
 const TodoList = ({ todos, onDeleteTodo, onToggleCompleted }) => (
   <ul className="TodoList">
@@ -49,8 +53,8 @@ const mapStateToProps = (state) => ({
   todos: todosSelectors.getVisibleTodos(state),
 });
 const mapDispatchToProps = {
-  onToggleCompleted: todosOperation.toggleCompleted,
-  onDeleteTodo: todosOperation.deleteTodo,
+  onToggleCompleted: todosOperations.toggleCompleted,
+  onDeleteTodo: todosOperations.deleteTodo,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
